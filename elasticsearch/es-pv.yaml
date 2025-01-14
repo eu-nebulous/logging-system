@@ -1,0 +1,46 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: es-data-volume-0
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/lab-root/logging/es-data"
+
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: es-data-volume-1
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/lab-root/logging/es-data"
+
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: es-data-volume-2
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/lab-root/logging/es-data"
